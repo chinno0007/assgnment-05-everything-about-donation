@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Blog</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Daisy UI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+    <!-- header start -->
+    <header class="">
+        <nav class="pb-10">
+            <div class="navbar bg-[#F9F7F3]">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li>
+                                <!--  -->
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="index.html" class="btn btn-ghost text-xl">Home</a>
+                </div>
+                <div class="navbar-center hidden lg:flex justify-center">
+                    <ul class="menu menu-horizontal px-1">
+                        <li>
+                            <h1 class="text-xl"><img class="w-fit h-fit" src="assets/logo.png" alt="">Donate For
+                                Bangladesh</h1>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn"><img src="assets/coin.png" alt="">5500<span>BDT</span></a>
+                </div>
+            </div>
+            <!-- Donation & history Button -->
+            <div class="flex justify-center gap-10 lg:pt-16 pt-10">
+                <button class="btn">Donation</button>
+                <button class="btn">History</button>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+     <main>
+        <section class="p-3">
+            <h1 class="text-2xl font-bold pb-8">Important FAQ?</h1>
+            <div class="collapse bg-base-200 mb-3">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title text-lg font-medium">What is Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse bg-base-200 mb-3">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-lg font-medium">How do you select an element from a DOM?</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse bg-base-200 mb-3">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-lg font-medium">How do you manipulate an element attributes and style using DOM?</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+        </section>
+     </main>
+     <!-- main end -->
+</body>
+
+</html>

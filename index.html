@@ -5,12 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Daisy UI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="container mx-auto">
     <!-- header start -->
-    <header>
-        <h1>This is going to be assignment 05</h1>
+    <header class="">
+        <nav class="pb-10">
+            <div class="navbar bg-[#F9F7F3]">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li>
+                                <!--  -->
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="blog.html" class="btn btn-ghost text-xl">Blog</a>
+                </div>
+                <div class="navbar-center hidden lg:flex justify-center">
+                    <ul class="menu menu-horizontal px-1">
+                        <li>
+                            <h1 class="text-xl"><img class="w-fit h-fit" src="assets/logo.png" alt="">Donate For
+                                Bangladesh</h1>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a id="myBalance" class="btn"><img src="assets/coin.png" alt="">5500<span>BDT</span></a>
+                </div>
+            </div>
+            <!-- Donation & history Button -->
+            <div class="flex justify-center gap-10 pt-16">
+                <button class="btn">Donation</button>
+                <button class="btn">History</button>
+            </div>
+        </nav>
     </header>
     <!-- header end -->
 
@@ -18,7 +60,72 @@
 
     <!-- Main start -->
     <main>
+        <!-- Donation Section -->
+        <section id="donations">
+            <!-- card 01 -->
+            <div class="border p-2 rounded-lg mb-10">
+                <div class="card lg:card-side lg:grid grid-cols-2 justify-center ">
+                    <figure>
+                        <img class="max-w-fit" src="assets/noakhali.png" alt="Flood affected area Noakhali district picture." />
+                    </figure>
+                    <div class="card-body p-0 lg:p-6">
+                        <a class=" w-fit p-3 rounded-sm flex items-center bg-[#1111110D]">
+                            <img src="assets/coin.png" alt="">
+                            <h1 id="donated-amount" class="text-xl ps-1 font-bold text-[#111111B3]">0 BDT</h1>
+                        </a>
+                        <h2 class="card-title mt-4 mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cum animi natus doloribus odit autem tenetur? A esse culpa voluptate et nulla alias aut pariatur consectetur iure, ex quia quae qui neque perferendis fuga deserunt debitis! Perspiciatis illo laudantium tenetur fugit culpa. Quam minus totam laudantium at molestias, nulla est labore dolorem culpa hic laboriosam expedita odio unde soluta sed.</p>
+                        <input id="n-donate-amount" type="text" placeholder="Enter Donation Amount" class="input input-bordered w-full max-w-full" />
+                        <button id="n-donate-btn" class="btn btn-wide w-full max-w-full">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 02 -->
+            <div class="border p-2 rounded-lg mb-10">
+                <div class="card lg:card-side lg:grid grid-cols-2 justify-center ">
+                    <figure>
+                        <img class="max-w-fit" src="assets/feni.png" alt="Flood affected area Noakhali district picture." />
+                    </figure>
+                    <div class="card-body p-0 lg:p-6">
+                        <a class=" w-fit p-3 rounded-sm flex items-center bg-[#1111110D]">
+                            <img src="assets/coin.png" alt="">
+                            <h1 id="f-money-balance" class="text-xl ps-1 font-bold text-[#111111B3]">600 BDT</h1>
+                        </a>
+                        <h2 class="card-title mt-4 mb-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cum animi natus doloribus odit autem tenetur? A esse culpa voluptate et nulla alias aut pariatur consectetur iure, ex quia quae qui neque perferendis fuga deserunt debitis! Perspiciatis illo laudantium tenetur fugit culpa. Quam minus totam laudantium at molestias, nulla est labore dolorem culpa hic laboriosam expedita odio unde soluta sed.</p>
+                        <input id="fDonation-amount" type="text" placeholder="Enter Donation Amount" class="input input-bordered w-full max-w-full" />
+                        <button id="faDonation" class="btn btn-wide w-full max-w-full">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 03 -->
+            <div class="border p-2 rounded-lg mb-10">
+                <div class="card lg:card-side lg:grid grid-cols-2 justify-center ">
+                    <figure>
+                        <img class="max-w-fit" src="assets/quota-protest.png" alt="Flood affected area Noakhali district picture." />
+                    </figure>
+                    <div class="card-body p-0 lg:p-6">
+                        <a class=" w-fit p-3 rounded-sm flex items-center bg-[#1111110D]">
+                            <img src="assets/coin.png" alt="">
+                            <h1 id="old-q-balance" class="text-xl ps-1 font-bold text-[#111111B3]">1000 BDT</h1>
+                        </a>
+                        <h2 class="card-title mt-4 mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cum animi natus doloribus odit autem tenetur? A esse culpa voluptate et nulla alias aut pariatur consectetur iure, ex quia quae qui neque perferendis fuga deserunt debitis! Perspiciatis illo laudantium tenetur fugit culpa. Quam minus totam laudantium at molestias, nulla est labore dolorem culpa hic laboriosam expedita odio unde soluta sed.</p>
+                        <input id="quota-amount" type="text" placeholder="Enter Donation Amount" class="input input-bordered w-full max-w-full" />
+                        <button id="quota-donate" class="btn btn-wide w-full max-w-full">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+
+        <!-- History Section -->
+         <section id="history" class="hidden">
+            <div class="rounded-md border p-5">
+                <h1>My name is Hasan</h1>
+                <p>What is going on here!</p>
+            </div>
+         </section>
     </main>
     <!-- Main end -->
 
@@ -27,7 +134,9 @@
 
 
     <!-- scripts are here -->
-     <script src="js/donate.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="js/money.js"></script>
+    <script src="js/btn-color.js"></script>
 </body>
 
 </html>
